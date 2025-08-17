@@ -36,6 +36,9 @@ jobs:
         run: |
           sphinx-build -b html docs/source docs/_build/html
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       # Pages용 아티팩트 업로드
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -51,5 +54,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 

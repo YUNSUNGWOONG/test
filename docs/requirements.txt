@@ -1,5 +1,6 @@
 sphinx>=7,<9
-extensions = ["myst_parser"]
+sphinx-rtd-theme>=2
+myst-parser>=2
 # Markdown 지원 원하면 아래도 사용
 # myst-parser>=2
 # 테마 쓰면 예: furo>=2024.0.0
